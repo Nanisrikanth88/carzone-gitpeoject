@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 {% load static %}
 
 <!-- Banner start -->
@@ -907,13 +908,13 @@
                             </a>
                             <div class="social-list clearfix">
                                 <a href="{{ team.facebook_link}}" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <!-- <a href="{{ team.twitter_link}}"target="_blank" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="{{ team.google_plus_link}}" target="_blank" class="google-bg"><i class="fa fa-google"></i></a> -->
+                                <a href="{{ team.twitter_link}}"target="_blank" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+                                <a href="{{ team.google_plus_link}}" target="_blank" class="google-bg"><i class="fa fa-google"></i></a>
                             </div>
                         </div>
                         <div class="details">
                             <h4><a href="team-detail.html">{{team.first_name}} {{team.last_name}}</a></h4>
-                            <h5>{{team.desgnation}}</h5>
+                            <h5>{{team.designation}}</h5>
                         </div>
                     </div>
                 </div>

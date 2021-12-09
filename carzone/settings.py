@@ -122,7 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = Path(BASE_DIR, 'static')
 STATICFILES_DIRS =[
     Path(BASE_DIR, 'carzone/static'),
 ]
@@ -131,6 +131,7 @@ STATICFILES_DIRS =[
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 # Media settings
-MEDIA_ROOT = BASE_DIR/ 'media'
+MEDIA_ROOT = Path(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
